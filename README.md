@@ -25,9 +25,8 @@
 
 # Steps to run the test
 1. Download the app from play store
-1. Extract the apk and store it in the local
 1. Connect the real device
 1. Start Appium, set the host as '127.0.0.1', port as '4727'
 1. In terminal, run the command mvn clean test
 <img src="Images/Testresult.png">
-6. Find test result at build/reports/tests/cucumber-extent/cucumber_report.html
+5. Find test result at build/reports/tests/cucumber-extent/cucumber_report.html
