@@ -6,7 +6,6 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -23,10 +22,10 @@ public class Helpers {
 
     int defaultSwipeDuration = 2;
 
-    public void openApp() throws MalformedURLException {
+ public void openApp() throws MalformedURLException {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("noReset", "true");
+        capabilities.setCapability("noReset", "false");
         capabilities.setCapability("deviceName", "My New Phone");
         capabilities.setCapability("platformVersion", "9");
         capabilities.setCapability("platformName", "Android");
@@ -35,7 +34,6 @@ public class Helpers {
         driver = new AndroidDriver(new URL("http://127.0.0.1:4727/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
-
 
     public void swipeUp() {
         int startX;
@@ -69,5 +67,4 @@ public class Helpers {
         }
         return expectedDates;
     }
-
 }

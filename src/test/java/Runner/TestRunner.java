@@ -7,14 +7,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {
-                "html:build/reports/tests/cucumber-extent/cucumber_report.html"
-        },
+        plugin = {"html:build/reports/tests/cucumber-extent/cucumber_report.html"},
         features = {"src/resources"},
-        glue = {"Steps",
-                "src/main/java/Utilities"},
+        glue = {"src/main/java/Utilities","Steps"},
         tags = "@testing",
         publish = true
        )
-public class TaestRunner {
+
+public class TestRunner {
 }

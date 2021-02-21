@@ -3,7 +3,9 @@ package Steps;
 import Pages.SideMenuPage;
 import io.cucumber.java.en.And;
 
-public class SideMenuSteps {
+
+
+public class SideMenuPageSteps {
 
     SideMenuPage sideMenuPage = new SideMenuPage();
 

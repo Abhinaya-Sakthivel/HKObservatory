@@ -5,6 +5,7 @@ import Utilities.Helpers;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
+
 import java.net.MalformedURLException;
 
 
@@ -21,4 +22,6 @@ public class HomePageSteps {
     public void userClickOnTheSideMenu() {
         homePage.clickSideMenu();
     }
+
+
 }
